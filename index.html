@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221108040504">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="fullscreen fullscreen-ibg">
+			<div class="fullscreen__menu">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li>
+							<a href="#" class="menu__link">Носовая стойка</a>
+							<ul class="sub-menu__list">
+								<li>
+									<a href="#" class="sub-menu__link" data-popup="#popup-nose">Схема</a>
+								</li>
+								<li>
+									<a href="#" class="sub-menu__link">Видеоразбор</a>
+									<ul class="sub-sub-menu__list">
+										<li>
+											<a href="#" class="sub-sub-menu__link" data-popup="#popup-video-osnova">1</a>
+										</li>
+										<li>
+											<a href="#" class="sub-sub-menu__link" data-popup="#popup-video-osnova2">2</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="menu__link">Основная стойка</a>
+							<ul class="sub-menu__list">
+								<li>
+									<a data-popup="#popup-osnova" href="#" class="sub-menu__link">Схема</a>
+								</li>
+								<li>
+									<a href="#" class="sub-menu__link">Видеоразбор</a>
+									<ul class="sub-sub-menu__list">
+										<li>
+											<a href="#" class="sub-sub-menu__link" data-popup="#popup-video-osnova3">1</a>
+										</li>
+										<li>
+											<a href="#" class="sub-sub-menu__link" data-popup="#popup-video-osnova4">2</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a data-goto=".page" href="#" class="menu__link">Электрическая схема выпуска шасси</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<main class="page">
+			<div class="page__container">
+				<div class="page__item item_page">
+					<div class="video">
+						<video id="fon" rel="preload" muted src="img/video.mp4"></video>
+					</div>
+					<div class="block1">
+						<div class="wrapper1">
+							<div class="item__content">
+								<div class="content__circle content__circle-1" id="test">
+									<div class="placeholder-1">GEAR/FIRE<br>TEST</div>
+								</div>
+								<div class="content__circle content__circle-2 content__circle_green">
+									<div class="placeholder">NOSE</div>
+								</div>
+							</div>
+							<div class="item__content">
+								<div class="content__circle content__circle-3">
+									<div class="placeholder">UNSAFE</div>
+								</div>
+								<div class="content__circle content__circle_green content__circle-4">
+									<div class="placeholder">LEFT</div>
+								</div>
+								<div class="content__circle content__circle_green content__circle-5">
+									<div class="placeholder">RIGHT</div>
+								</div>
+							</div>
+							<div class="item__content content-item">
+								<div class="line"></div>
+								<h3>LANDING GEAR</h3>
+								<div class="line1"></div>
+								<div>
+									<span>V<sub>LC</sub>V<sub>LOC</sub>=188 KIAS</span> <br>
+									<span class="formul">V<sub>LOR</sub>=152 KIAS</span>
+								</div>
+							</div>
+						</div>
+						<div class="switch">
+							<span class="switch__span-1">UP</span>
+							<input id="checkbox" class="checkbox" type="checkbox">
+							<span class="switch__span-2">DOWN</span>
+						</div>
+					</div>
+				</div>
+				<div class="page__item item_page-1">
+					<div class="page__image-ibg">
+						<picture><source srcset="img/panel.webp" type="image/webp"><img src="img/panel.png" alt=""></picture>
+						<div class="circle nose-circle"></div>
+						<div class="circle left-circle"></div>
+						<div class="circle right-circle"></div>
+						<div class="circle unsafe-circle"></div>
+
+						<div class="box">
+							<div class="box__circle circle__box-1"></div>
+							<div class="box__circle circle__box-2"></div>
+							<div class="box__circle circle__box-3"></div>
+						</div>
+						<div class="box__p2">
+							<div class="box__circle p2__box-1"></div>
+							<div class="box__circle p2__box-2" id="p2"></div>
+							<div class="box__circle p2__box-3"></div>
+						</div>
+						<div class="box__r8">
+							<div class="box__circle box__nose-1"></div>
+							<div class="box__circle box__nose-2"></div>
+							<div class="box__circle box__nose-3" id="r8"></div>
+						</div>
+
+						<span class="nose-released  text">Носовая опора выпущена</span>
+						<div class="box__nose">
+							<div class="box__circle box__nose-1"></div>
+							<div class="box__circle box__nose-2"></div>
+							<div class="box__circle box__nose-3" id="nose"></div>
+						</div>
+						<span class="left-released  text">Левая опора выпущена</span>
+						<div class="box__left">
+							<div class="box__circle box__nose-1"></div>
+							<div class="box__circle box__nose-2"></div>
+							<div class="box__circle box__nose-3" id="left"></div>
+						</div>
+						<span class="right-released text">Правая опора выпущена</span>
+						<div class="box__right">
+							<div class="box__circle box__nose-1"></div>
+							<div class="box__circle box__nose-2"></div>
+							<div class="box__circle box__nose-3" id="right"></div>
+						</div>
+
+						<span class="nose-removed  text">Носовая опора <br> убрана</span>
+						<div class="removed__nose">
+							<div class="box__circle removed__nose-1"></div>
+							<div class="box__circle removed__nose-2"></div>
+							<div class="box__circle removed__nose-3" id="removed__nose"></div>
+						</div>
+						<span class="left-removed  text">Левая опора <br> убрана</span>
+						<div class="removed__left">
+							<div class="box__circle removed__nose-1"></div>
+							<div class="box__circle removed__nose-2"></div>
+							<div class="box__circle removed__nose-3" id="removed__left"></div>
+						</div>
+						<span class="right-removed text">Правая опора <br> убрана</span>
+						<div class="removed__right">
+							<div class="box__circle removed__nose-1"></div>
+							<div class="box__circle removed__nose-2"></div>
+							<div class="box__circle removed__nose-3" id="removed__right"></div>
+						</div>
+						<div class="kv1">
+							<div class="box__circle kv1-1"></div>
+							<div class="box__circle kv1-2"></div>
+							<div class="box__circle kv1-3" id="kv1"></div>
+						</div>
+						<div class="kv9">
+							<div class="box__circle kv9-1"></div>
+							<div class="box__circle kv9-2"></div>
+							<div class="box__circle kv9-3" id="kv3"></div>
+						</div>
+						<span class="solenoid text">Соленоид <br> уборки</span>
+						<span class="solenoid-2 text">Соленоид <br> выпуска</span>
+					</div>
+				</div>
+				<div class="page__item item__video">
+					<h1 class="op">Носовая опора шасси</h1>
+					<video id="video1" rel="preload" muted>
+						<source src="img/1.mp4" type="">
+					</video>
+					<video id="video2" rel="preload" muted>
+						<source src="img/2.mp4" type="">
+					</video>
+					<h1 class="os">Основая опора шасси</h1>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="popup-nose" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text popup__image">
+					<div class="popup__image-1"></div>
+					<div class="popup__image-2"></div>
+					<div class="popup__image-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-osnova" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content osnova__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text popup__osnova">
+					<div class="popup__osnova-1"></div>
+					<div class="popup__osnova-2"></div>
+					<div class="popup__osnova-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-video-osnova" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content video__content-osnova">
+				<button data-close type="button" class="popup__close video__close"><strong>&times;</strong></button>
+				<div class="popup__text popup__video">
+					<video id="video-osnova" controls controlsList="nodownload noplaybackrate" rel="preload" muted>
+						<source src="img/osnova3.mp4" type="">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-video-osnova2" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content video__content-osnova">
+				<button data-close type="button" class="popup__close video__close"><strong>&times;</strong></button>
+				<div class="popup__text popup__video">
+					<video id="video-osnova" controls controlsList="nodownload noplaybackrate" rel="preload" muted>
+						<source src="img/2.mp4" type="">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-video-osnova3" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content video__content-osnova">
+				<button data-close type="button" class="popup__close video__close"><strong>&times;</strong></button>
+				<div class="popup__text popup__video">
+					<video id="video-osnova" controls controlsList="nodownload noplaybackrate" rel="preload" muted>
+						<source src="img/osnova.mp4" type="">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-video-osnova4" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content video__content-osnova">
+				<button data-close type="button" class="popup__close video__close"><strong>&times;</strong></button>
+				<div class="popup__text popup__video">
+					<video id="video-osnova" controls controlsList="nodownload noplaybackrate" rel="preload" muted>
+						<source src="img/1.mp4" type="">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221108040504"></script>
+</body>
+
+</html>
